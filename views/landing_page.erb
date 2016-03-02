@@ -1,0 +1,46 @@
+  <h1 class="soon">COMING RELATIVELY SOON</h1>
+<div class='container'>
+  <div class="clock"</div>
+</div>
+
+<div class="shop-card">
+  <div class="title">
+    Shoesztr WP2
+  </div>
+  <div class="desc">
+    Weighlifting Shoes
+  </div>
+  <div class="slider">
+    <figure data-color="#E24938, #A30F22 ">
+      <img src="http://images.nike.com/is/image/DotCom/PDP_COPY/NIKE-METCON-2-819899_610_A_PREM.jpg" />
+    </figure>
+    </figure>
+  </div>
+
+  <div class="cta">
+    <button class="btn">Add to cart<span class="bg"></span></button>
+    <div class="price">£350</div>
+  </div>
+</div>
+
+<script type="text/javascript">
+var clock;
+
+$(document).ready(function() {
+
+  // Grab the current date
+  var currentDate = new Date();
+
+  // Set some date in the future. In this case, it's always Jan 1
+  var futureDate  = new Date(currentDate.getFullYear() + 1, 0, 1);
+
+  // Calculate the difference in seconds between the future and current date
+  var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+
+  // Instantiate a coutdown FlipClock
+  clock = $('.clock').FlipClock(diff, {
+    clockFace: 'DailyCounter',
+    countdown: true
+  });
+});
+</script>
